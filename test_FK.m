@@ -5,7 +5,7 @@ theta1 = 0;
 theta2 = 150;
 theta3 = -160;
 theta4 = 20;
-theta5 = 0;
+theta5 = -35;
 
 s1 = sind(theta1);
 c1 = cosd(theta1);
