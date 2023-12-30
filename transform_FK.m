@@ -2,7 +2,7 @@
 % syms theta1 theta2 theta3 theta4 theta5
 
 theta1 = 0;
-theta2 = 150;
+theta2 = 160;
 theta3 = -160;
 theta4 = 0;
 theta5 = 0;

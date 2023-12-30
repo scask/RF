@@ -2,8 +2,8 @@ hold on
 grid on
 axis equal
 
-for t1 = 0
-    for t2 = 0:20:150
+for t1 = 0 %-90:10:90
+    for t2 = 0:20:160
         for t3 = -0:-20:-160
             for t4 = -90:30:90
                 endPoint = FK(t1,t2,t3,t4,0);
@@ -14,8 +14,6 @@ for t1 = 0
 end
 
 view(0,0)
-
-% circle(350,675,1350+1220);
-% circle(350-1350*cosd(40),675+1350*sind(40),1220);
-% circle(350+1350,675,1220);
-% circle(350,675,651.58-105.56);
+%view(45,45)
+circle(0,11,109);
+circle(44,11,65);
