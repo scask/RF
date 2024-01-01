@@ -11,13 +11,13 @@ function movel(angles1,angles2,step)
         Ox = pos1(1,2) + ((pos2(1,2)-pos1(1,2))/step)*time;
         Oy = pos1(2,2) + ((pos2(2,2)-pos1(2,2))/step)*time;
         Oz = pos1(3,2) + ((pos2(3,2)-pos1(3,2))/step)*time;
-        Ax = pos1(1,3) + ((pos2(1,2)-pos1(1,3))/step)*time;
+        Ax = pos1(1,3) + ((pos2(1,3)-pos1(1,3))/step)*time;
         Ay = pos1(2,3) + ((pos2(2,3)-pos1(2,3))/step)*time;
         Az = pos1(3,3) + ((pos2(3,3)-pos1(3,3))/step)*time;
         T06 = [Nx Ox Ax x;
                Ny Oy Ay y;
                Nz Oz Az z;
-               0 0 0 1];
+               0 0 0 1]
         anglest = IK(T06);
         display_robot(anglest(1),anglest(2),anglest(3),anglest(4),anglest(5));
         drawnow;

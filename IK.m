@@ -55,10 +55,10 @@ function angles = IK(T06)
     
     %% Find q2
     c2 = (px^2+py^2-l1^2-l2^2)/(2*l1*l2) ;
-    s21 = sqrt(1-c2^2) ;
-    s22 = - sqrt(1-c2^2) ;
+    s21 = sqrt(1-c2^2); 
+    s22 = - sqrt(1-c2^2); 
     % We have two solutions for q2
-    q21 = atan2d(s21,c2) ;
+    % q21 = atan2d(s21,c2) ;
     q22 = atan2d(s22,c2) ;
     
     
@@ -68,12 +68,12 @@ function angles = IK(T06)
     k1 = l1+l2*c2 ;
     k21 = l2*s21 ;
     k22 = l2*s22 ;
-    gama1 = atan2d(k21,k1) ;
+    % gama1 = atan2d(k21,k1) ;
     gama2 = atan2d(k22,k1) ;
     r = sqrt(k1^2+k21^2) ; % r is the same for both values of q2
     
     % We find q1 depending on the value of q2
-    q11 = atan2d(py/r,px/r) - gama1 ;
+    % q11 = atan2d(py/r,px/r) - gama1 ;
     q12 = atan2d(py/r,px/r) - gama2 ;
     
     % only get one solution

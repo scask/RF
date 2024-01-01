@@ -1,4 +1,4 @@
-function [outputArg1,outputArg2] = display_robot(theta1,theta2,theta3,theta4,theta5)
+function display_robot(theta1,theta2,theta3,theta4,theta5)
     s1 = sind(theta1);
     c1 = cosd(theta1);
     

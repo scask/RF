@@ -16,10 +16,13 @@ angles5 = IK(point5);
 point6 = FK(0,135.69,-156.28,20.59,90);
 angles6 = IK(point6);
 
-%movej(angles1,angles2,50);
-%movej(angles2,angles3,100);
-%movej(angles3,angles4,100);
-movej(angles4,angles5,100);
-movel(angles5,angles6,100);
+point7 = FK(0,90,-90,0,0);
+angles7 = IK(point7);
 
+movej(angles1,angles2,50);
+movej(angles2,angles3,100);
+movej(angles3,angles4,100);
+movej(angles4,angles5,100);
+movec(angles5,angles7,angles6,100)
+movel(angles6,angles5,100);
 
