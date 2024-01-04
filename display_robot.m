@@ -49,7 +49,7 @@ function display_robot(theta1,theta2,theta3,theta4,theta5)
     x = [T01(1,4),T02(1,4),T03(1,4),T04(1,4),T05(1,4),T06(1,4)];
     y = [T01(2,4),T02(2,4),T03(2,4),T04(2,4),T05(2,4),T06(2,4)];
     z = [T01(3,4),T02(3,4),T03(3,4),T04(3,4),T05(3,4),T06(3,4)];
-    plot3(x,y,z);
+    plot3(x,y,z,Color='blue');
     hold on;
     grid on;
     view(56,12)

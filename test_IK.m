@@ -53,7 +53,7 @@ l2 = 55;
 px = R4;
 py = Z4 - 11; % get rid of the base height
 
-%% Find q2
+%% Find theta 3
 c2 = (px^2+py^2-l1^2-l2^2)/(2*l1*l2) ;
 s21 = sqrt(1-c2^2) ;
 s22 = - sqrt(1-c2^2) ;
@@ -62,7 +62,7 @@ q21 = atan2d(s21,c2) ;
 q22 = atan2d(s22,c2) ;
 
 
-%% Find q1
+%% Find theta 4
 
 % We define the constants
 k1 = l1+l2*c2 ;
